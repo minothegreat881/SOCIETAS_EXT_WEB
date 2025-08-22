@@ -1,22 +1,23 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type React from "react"
+import ClientLayout from "./ClientLayout"
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'SOCIETAS - Rímske pomocné jednotky',
-  description: 'Spoločnosť historickej rekonštrukcie rímskych pomocných jednotiek',
+export const metadata = {
+  title: "S.C.E.A.R. - Rímska armáda a pomocné zbory",
+  description: "Historical reenactment group focused on Roman auxiliary forces",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="sk">
-      <body className={inter.className}>{children}</body>
+    <html lang="sk" suppressHydrationWarning>
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
     </html>
   )
 }

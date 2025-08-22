@@ -17,7 +17,15 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.454.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-dropdown-menu": "latest",
+    "@radix-ui/react-tabs": "latest",
+    "@radix-ui/react-toast": "latest",
+    "@radix-ui/react-accordion": "latest",
+    "date-fns": "latest",
+    "react-hook-form": "latest",
+    "zod": "latest"
   },
   "devDependencies": {
     "typescript": "^5",
