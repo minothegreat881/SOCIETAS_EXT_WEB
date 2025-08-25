@@ -45,6 +45,7 @@
     "leaflet": "latest",
     "react-leaflet": "latest",
     "recharts": "latest",
+    "vaul": "latest",
     "next-themes": "latest",
     "react-day-picker": "latest",
     "@radix-ui/react-popover": "latest",
