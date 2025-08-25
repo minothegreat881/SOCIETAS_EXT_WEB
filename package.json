@@ -46,6 +46,7 @@
     "framer-motion": "latest",
     "leaflet": "latest",
     "react-leaflet": "latest",
+    "react-resizable-panels": "latest",
     "recharts": "latest",
     "vaul": "latest",
     "next-themes": "latest",
