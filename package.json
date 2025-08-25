@@ -39,6 +39,7 @@
     "cmdk": "latest",
     "date-fns": "latest",
     "embla-carousel-react": "latest",
+    "input-otp": "latest",
     "react-hook-form": "latest",
     "zod": "latest",
     "framer-motion": "latest",
