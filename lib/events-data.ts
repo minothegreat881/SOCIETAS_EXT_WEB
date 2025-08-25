@@ -213,9 +213,8 @@ export const generateCalendarEvents = (): CalendarEvent[] => {
 export const generateMapLocations = () => {
   return getVisibleEvents().map((event) => ({
     id: event.id,
-    position: event.location.coordinates,
+    position: [event.location.coordinates.lat, event.location.coordinates.lng] as [number, number],
     title: event.title,
-    description: `${event.recurring ? "Recurring event" : "One-time event"} at ${event.location.name}`,
-    type: event.category,
+    category: event.category,
   }))
 }
