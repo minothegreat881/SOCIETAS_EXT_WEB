@@ -473,7 +473,7 @@ export default function HistoryDetailPage({ slug }: { slug: string }) {
                   ))}
                 </ul>
 
-                {slug === "xv-legia-apollinaris" && content.content.timeline ? (
+                {false && (
                   // Timeline for XV Legion
                   <>
                     <h3 className="text-xl font-bold mt-8 mb-4 pb-2 border-b border-stone-200">Časová os</h3>
