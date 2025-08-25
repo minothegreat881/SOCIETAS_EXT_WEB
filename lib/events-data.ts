@@ -213,8 +213,10 @@ export const generateCalendarEvents = (): CalendarEvent[] => {
 export const generateMapLocations = () => {
   return getVisibleEvents().map((event) => ({
     id: event.id,
-    position: [event.location.coordinates.lat, event.location.coordinates.lng] as [number, number],
+    position: event.location.coordinates,
     title: event.title,
+    description: event.description,
+    type: event.category,
     category: event.category,
   }))
 }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link"
 import Image from "next/image"
@@ -473,38 +473,33 @@ export default function HistoryDetailPage({ slug }: { slug: string }) {
                   ))}
                 </ul>
 
+                {/* Timeline section temporarily disabled - timeline data not available */}
                 {false && (
-                  // Timeline for XV Legion
                   <>
                     <h3 className="text-xl font-bold mt-8 mb-4 pb-2 border-b border-stone-200">Časová os</h3>
                     <div className="space-y-4">
-                      {content.content.timeline.map((item, index) => (
-                        <div key={index} className="relative pl-6 pb-4 border-l border-red-800">
-                          <div className="absolute left-0 top-0 w-3 h-3 -translate-x-1.5 rounded-full bg-red-800"></div>
-                          <div className="font-bold text-sm">{item.year}</div>
-                          <div className="text-sm text-stone-700">{item.event}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  // Unit types for Auxiliary Forces
-                  <>
-                    <h3 className="text-xl font-bold mt-8 mb-4 pb-2 border-b border-stone-200">Typy jednotiek</h3>
-                    <div className="space-y-3">
-                      {content.content.unitTypes.map((type, index) => (
-                        <div key={index} className="bg-white p-3 rounded border border-stone-200">
-                          <h4 className="font-bold text-sm">{type.title}</h4>
-                          <ul className="text-sm mt-1 space-y-1 text-stone-700">
-                            {type.units.map((unit, uIndex) => (
-                              <li key={uIndex}>• {unit}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
+                      {/* Timeline content would go here */}
                     </div>
                   </>
                 )}
+              </div>
+            </div>
+
+            {slug === "auxiliary-forces" && "unitTypes" in content.content && (
+              <div className="md:col-span-8 bg-white p-8">
+                <h3 className="text-xl font-bold mt-8 mb-4 pb-2 border-b border-stone-200">Typy jednotiek</h3>
+                <div className="space-y-3">
+                  {content.content.unitTypes.map((type, index) => (
+                    <div key={index} className="bg-white p-3 rounded border border-stone-200">
+                      <h4 className="font-bold text-sm">{type.title}</h4>
+                      <ul className="text-sm mt-1 space-y-1 text-stone-700">
+                        {type.units.map((unit, uIndex) => (
+                          <li key={uIndex}>• {unit}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
 
                 <div className="mt-8">
                   <Button asChild className="w-full bg-red-800 hover:bg-red-900">
@@ -514,7 +509,7 @@ export default function HistoryDetailPage({ slug }: { slug: string }) {
                   </Button>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </article>
       </section>

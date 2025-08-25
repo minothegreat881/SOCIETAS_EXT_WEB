@@ -80,7 +80,6 @@ export default function HistoryPage() {
             <RomanSectionHeader
               title="História a výskum"
               subtitle="Naše články"
-              description="Ponorte sa do fascinujúceho sveta rímskej histórie prostredníctvom našich článkov a výskumu. Objavte príbehy légií, pomocných zborov a každodenného života v Rímskej ríši."
             />
 
             {allArticles.length > 0 ? (

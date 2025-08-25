@@ -33,7 +33,7 @@ export default function CardSwiper({ images, activeCategory = "All" }: CardSwipe
   const opacity = useTransform(x, [-200, -150, 0, 150, 200], [0, 1, 1, 1, 0])
 
   // Handle drag end
-  const handleDragEnd = (_, info) => {
+  const handleDragEnd = (_: any, info: any) => {
     if (info.offset.x > 100) {
       // Swiped right
       setExitX(200)
