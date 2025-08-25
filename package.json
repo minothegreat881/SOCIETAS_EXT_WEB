@@ -36,6 +36,7 @@
     "@radix-ui/react-toggle": "latest",
     "@radix-ui/react-toggle-group": "latest",
     "@radix-ui/react-tooltip": "latest",
+    "cmdk": "latest",
     "date-fns": "latest",
     "embla-carousel-react": "latest",
     "react-hook-form": "latest",
